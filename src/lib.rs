@@ -14,6 +14,17 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
+use std::fmt;
+
+pub struct Reset;
+impl fmt::Display for Reset {
+	fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+		write!(f, "\x1b[0m")
+	}
+}
 
 mod foreground;
 pub use foreground::ForegroundColor;
+
+mod background;
+pub use background::BackgroundColor;
