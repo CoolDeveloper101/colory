@@ -1,5 +1,5 @@
 # Colory
-A simple library to make your command line application more colorfull!
+A simple library to make your command line application more colorful!
 
 
 ## Warning!

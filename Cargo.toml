@@ -3,6 +3,12 @@ name = "colory"
 version = "0.1.0"
 authors = ["Ashwin Gupta <cooldeveloper101@gmail.com>"]
 edition = "2018"
+description = "A simple library to make your command line application more colorful!"
+readme = "README.md"
+homepage = "https://github.com/CoolDeveloper101/colory"
+repository = "https://github.com/CoolDeveloper101/colory"
+license = "Apache-2.0"
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
