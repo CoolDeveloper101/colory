@@ -5,7 +5,7 @@ A simple library to make your command line application more colorful!
 ## Warning!
 This library may not work with terminals that do not support ansi escape codes.
 
-## Usage
+## Getting Started
 To use colory in your project, add it to the dependencies section in you Cargo.toml
 
 ```toml
