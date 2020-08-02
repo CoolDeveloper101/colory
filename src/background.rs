@@ -18,7 +18,7 @@ limitations under the License.
 use std::fmt;
 
 /// An enum to manipulate background colors.
-/// # Examples
+/// # Example
 /// ```
 /// # use colory::{Reset, BackgroundColor};
 /// #
@@ -26,6 +26,7 @@ use std::fmt;
 /// println!("{}The background should be blue.{}", BackgroundColor::Red, Reset);
 /// # }
 /// ```
+/// See the [examples](https://github.com/CoolDeveloper101/colory/tree/master/examples) directory for more examples.
 pub enum BackgroundColor {
 	Black,
 	Red,
@@ -34,9 +35,13 @@ pub enum BackgroundColor {
 	Blue,
 	Magenta,
 	Cyan,
-	White,
-	EightBit(u8),
-	RGB(u8, u8, u8),
+  White,
+  /// Somethimes you want more than 8 colors. Colory also has options to choose from a 8 bit color pallete which contains 256 colors.
+  /// You can check out the color pallete at [Wikipedia](https://en.wikipedia.org/wiki/ANSI_escape_code#8-bit)
+  EightBit(u8),
+  /// Heck! You want even more colors. Colory also has an RGB pallete which allows you to have 16777216 colors!
+  RGB(u8, u8, u8),
+  /// Reset the background color to whatever the default background color is.
 	Normal,
 }
 
