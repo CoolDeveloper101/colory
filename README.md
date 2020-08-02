@@ -10,7 +10,7 @@ To use colory in your project, add it to the dependencies section in you Cargo.t
 
 ```toml
 [dependencies]
-colory = "0.2.1"
+colory = "0.2.2"
 ```
 This will allow Cargo to download, build, and cache the colory support as a package directly from crates.io.
 
