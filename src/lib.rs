@@ -16,7 +16,7 @@ limitations under the License.
 
 
 //! `colory` is a utility to make your command line output more colorful!
-//! See the [getting started](https://github.com/CoolDeveloper101/colory/blob/master/README.md#usage) for more details
+//! See the [getting started](https://github.com/CoolDeveloper101/colory#getting-started) for more details
 
 use std::fmt;
 
