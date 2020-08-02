@@ -18,6 +18,15 @@ limitations under the License.
 use std::fmt;
 
 
+/// An enum to manipulate foreground colors.
+/// # Examples
+/// ```
+/// # use colory::{Reset, BackgroundColor};
+/// #
+/// # fn main() {
+/// println!("{}This is red.{}", ForegroundColor::Red, Reset);
+/// # }
+/// ```
 pub enum ForegroundColor {
 	Black,
 	Red,

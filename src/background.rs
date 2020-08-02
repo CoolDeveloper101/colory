@@ -17,7 +17,15 @@ limitations under the License.
 
 use std::fmt;
 
-
+/// An enum to manipulate background colors.
+/// # Examples
+/// ```
+/// # use colory::{Reset, BackgroundColor};
+/// #
+/// # fn main() {
+/// println!("{}The background should be blue.{}", BackgroundColor::Red, Reset);
+/// # }
+/// ```
 pub enum BackgroundColor {
 	Black,
 	Red,
