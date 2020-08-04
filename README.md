@@ -4,7 +4,7 @@ A simple library to make your command line application more colorful!
 
 ## Platform Support
 Here is a list of prominent terminal emulators that support ansi escape codes(this list is not complete, contribute by opening an issue or a pull request) -
-*It will take quite some time to do so I am very tired so it will probably be done in the next major release.*
+*It will take quite some time to do so I am very tired so it will probably be done in the next patch release.*
 
 If you terminal emulator is not in the list, download this library and run some of the examples.
 If they do not work, then your terminal probably does not support it.
@@ -17,7 +17,7 @@ To use colory in your project, add it to the dependencies section in you Cargo.t
 
 ```toml
 [dependencies]
-colory = "0.2.2"
+colory = "0.3.0"
 ```
 This will allow Cargo to download, build, and cache the colory as a package directly from crates.io.
 
