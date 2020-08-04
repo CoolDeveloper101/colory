@@ -46,3 +46,6 @@ pub use foreground::ForegroundColor;
 
 mod background;
 pub use background::BackgroundColor;
+
+mod styles;
+pub use styles::Styles;
