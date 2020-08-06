@@ -21,7 +21,7 @@ use std::fmt;
 /// An enum to manipulate foreground colors.
 /// # Example
 /// ```
-/// # use colory::{Reset, BackgroundColor};
+/// # use colory::{Reset, ForegroundColor};
 /// #
 /// # fn main() {
 /// println!("{}This is red.{}", ForegroundColor::Red, Reset);
