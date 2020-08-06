@@ -1,6 +1,7 @@
 use std::fmt;
 
 pub enum Styles {
+    Normal,
 	Bold,
 	Dim,
 	Italic,
@@ -24,6 +25,7 @@ pub enum Styles {
 impl fmt::Display for Styles {
 	fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
 	  let code = match self {
+        Styles::Normal => 0,
 		Styles::Bold => 1,
 		Styles::Dim => 2,
 		Styles::Italic => 3,
