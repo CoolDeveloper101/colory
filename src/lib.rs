@@ -25,7 +25,7 @@ use std::fmt;
 /// By using this struct, you can turn off all ansi customizations.
 /// # Example
 /// ```
-/// # use colory::{ForegroundColor, BackgroundColor};
+/// # use colory::{ForegroundColor as fg, BackgroundColor as bg, Reset};
 /// #
 /// # fn main() {
 /// // Instead of doing this
