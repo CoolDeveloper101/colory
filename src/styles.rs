@@ -1,7 +1,7 @@
 use std::fmt;
 
 pub enum Styles {
-    Normal,
+	Off
 	Bold,
 	Dim,
 	Italic,
