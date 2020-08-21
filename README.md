@@ -11,7 +11,18 @@ Here is a list of prominent terminal emulators that support ansi escape codes(th
 * GNU Screen
 * Minicorn
 * tmux
+**macOs**
+* Terminal
+* iTerm2
 * xterm
+**Microsoft Windows**
+* AlphaCom
+* ConEmu
+* mintty
+* PuTTy
+* Windows Terminal
+* Windows Console (aka cmd)
+* Powershell
 
 If you terminal emulator is not in the list, download this library and run some of the examples.
 If they do not work, then your terminal probably does not support it.
