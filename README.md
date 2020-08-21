@@ -4,7 +4,14 @@ A simple library to make your command line application more colorful!
 
 ## Platform Support
 Here is a list of prominent terminal emulators that support ansi escape codes(this list is not complete, contribute by opening an issue or a pull request) -
-*It will take quite some time to do so I am very tired so it will probably be done in the next patch release.*
+
+
+**Unix Like**
+* Linux console
+* GNU Screen
+* Minicorn
+* tmux
+* xterm
 
 If you terminal emulator is not in the list, download this library and run some of the examples.
 If they do not work, then your terminal probably does not support it.
