@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-use colory::{ Styles, Reset};
+use colory::{ Styles, Off};
 
 pub fn italic(){
-	println!("{}This is italic.{}", Styles::Italic, Reset);
+	println!("{}This is italic.{}", Styles::Italic, Off);
 }

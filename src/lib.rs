@@ -17,30 +17,6 @@ limitations under the License.
 
 //! `colory` is a utility to make your command line output more colorful!
 //! See the [getting started](https://github.com/CoolDeveloper101/colory#getting-started) for more details.
-
-use std::fmt;
-
-
-/// Sometimes you want to turn off all properties and switching to default for every property is quite unreadable.
-/// By using this struct, you can turn off all ansi customizations.
-/// # Example
-/// ```
-/// # use colory::{ForegroundColor as fg, BackgroundColor as bg, Reset};
-/// #
-/// # fn main() {
-/// // Instead of doing this
-/// println!("{}{}This is green text with a blue background.{}{} This is plain text.", bg::Blue, fg::Green, bg::Normal, fg::Normal);
-/// // You can do
-/// println!("{}{}This is green text with a blue background.{} This is plain text.", bg::Blue, fg::Green, Reset);
-/// # }
-/// ```
-pub struct Reset;
-impl fmt::Display for Reset {
-	fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-		write!(f, "\x1b[0m")
-	}
-}
-
 mod foreground;
 pub use foreground::ForegroundColor;
 
@@ -49,3 +25,4 @@ pub use background::BackgroundColor;
 
 mod styles;
 pub use styles::Styles;
+pub use styles::Styles::Off;

@@ -14,8 +14,8 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 
-use colory::{ Styles, Reset};
+use colory::{ Styles, Off};
 
 pub fn bold(){
-	println!("{}This is bold.{}", Styles::Bold, Reset);
+	println!("{}This is bold.{}", Styles::Bold, Off);
 }

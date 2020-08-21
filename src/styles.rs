@@ -1,7 +1,22 @@
 use std::fmt;
 
+
+/// Some properties not necessarily releated to foreground and background colors and are in this enum.
 pub enum Styles {
-	Off
+	/// Sometimes you want to turn off all properties and switching to default for every property is quite unreadable.
+	/// By using this, you can turn off all ansi customizations.
+	/// # Example
+	/// ```
+	/// # use colory::{ForegroundColor as fg, BackgroundColor as bg, Off};
+	/// #
+	/// # fn main() {
+	/// // Instead of doing this
+	/// println!("{}{}This is green text with a blue background.{}{} This is plain text.", bg::Blue, fg::Green, bg::Normal, fg::Normal);
+	/// // You can do
+	/// println!("{}{}This is green text with a blue background.{} This is plain text.", bg::Blue, fg::Green, Off);
+	/// # }
+	/// ```
+	Off,
 	Bold,
 	Dim,
 	Italic,
