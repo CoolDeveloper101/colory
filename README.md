@@ -11,10 +11,12 @@ Here is a list of prominent terminal emulators that support ansi escape codes(th
 * GNU Screen
 * Minicorn
 * tmux
+
 **macOs**
 * Terminal
 * iTerm2
 * xterm
+
 **Microsoft Windows**
 * AlphaCom
 * ConEmu
