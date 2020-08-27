@@ -1,4 +1,7 @@
 # Colory
+
+[![build](https://github.com/CoolDeveloper101/colory/workflows/build/badge.svg)](https://github.com/CoolDeveloper101/colory/actions/)
+
 A simple library to make your command line application more colorful!
 
 
