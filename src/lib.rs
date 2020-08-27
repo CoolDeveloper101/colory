@@ -17,6 +17,9 @@ limitations under the License.
 
 //! `colory` is a utility to make your command line output more colorful!
 //! See the [getting started](https://github.com/CoolDeveloper101/colory#getting-started) for more details.
+
+use std::fmt;
+
 mod foreground;
 pub use foreground::ForegroundColor;
 
@@ -26,3 +29,12 @@ pub use background::BackgroundColor;
 mod styles;
 pub use styles::Styles;
 pub use styles::Styles::Off;
+
+#[deprecated(since = "4.0", note = "Use Styles::Off instead.")]
+struct Reset;
+
+impl fmt::Display for Reset{
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(f, "\x1b[0m")
+    }
+}

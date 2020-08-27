@@ -20,10 +20,10 @@ use std::fmt;
 /// An enum to manipulate background colors.
 /// # Example
 /// ```
-/// # use colory::{Reset, BackgroundColor};
+/// # use colory::{Off, BackgroundColor};
 /// #
 /// # fn main() {
-/// println!("{}The background should be blue.{}", BackgroundColor::Red, Reset);
+/// println!("{}The background should be blue.{}", BackgroundColor::Red, Off);
 /// # }
 /// ```
 /// See the [examples](https://github.com/CoolDeveloper101/colory/tree/master/examples) directory for more examples.
