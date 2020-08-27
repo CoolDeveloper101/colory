@@ -17,6 +17,7 @@ on:
 jobs:
   build:
     name: "Build and Test"
+    runs-on: ubuntu-latest
     container: rust:latest
 
     steps:
