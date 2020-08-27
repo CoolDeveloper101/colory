@@ -1,0 +1,25 @@
+on:
+  push:
+    branches: 
+      - master
+
+    paths-ignore:
+      - '**.md'
+      - 'LICENSE'
+
+  pull_request:
+    branches:
+      - '**'
+
+
+jobs:
+  build:
+    name: "Build and Test"
+    container: rust:latest
+
+    steps:
+      - name: Build
+        run: cargo build -v
+
+      - name: Test
+        run: cargo test -v
