@@ -15,8 +15,8 @@ on:
 
 
 jobs:
-  build:
-    name: "Build and Test"
+  build_stable:
+    name: "build (stable)"
     runs-on: ubuntu-latest
     container: rust:latest
 
@@ -29,3 +29,20 @@ jobs:
 
       - name: Test
         run: cargo test -v
+
+  build_nightly:
+    name: "build (nightly)"
+    runs-on: ubuntu-latest
+    container: rustlang/rust:nightly
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build
+        run: cargo build -v
+
+      - name: Test
+        run: cargo test -v
+
+    continue-on-error: true
