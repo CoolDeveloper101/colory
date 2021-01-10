@@ -55,8 +55,8 @@ impl fmt::Display for Reset{
 /// It is advisable not to use the colory_init() function inside tests as it may cause the test to fail.
 pub fn colory_init() -> Result<(), &'static str> {
 
-    if cfg!(windows){
-
+    #[cfg(windows)]
+    {
         use std::os::raw::{c_int, c_ulong, c_void};
 
         type HANDLE = *mut c_void;
