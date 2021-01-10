@@ -29,6 +29,14 @@ jobs:
 
       - name: Test
         run: cargo test -v
+      
+      - name: Examples
+        run: |
+          cargo run --example background
+          cargo run --example foreground
+          cargo run --example foreground_with_background
+          cargo run --example reset
+          cargo run --example styles
 
   build_nightly:
     name: "build (nightly)"
@@ -44,5 +52,13 @@ jobs:
 
       - name: Test
         run: cargo test -v
+        
+      - name: Examples
+        run: |
+          cargo run --example background
+          cargo run --example foreground
+          cargo run --example foreground_with_background
+          cargo run --example reset
+          cargo run --example styles
 
     continue-on-error: true
