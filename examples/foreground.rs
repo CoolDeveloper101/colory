@@ -15,10 +15,11 @@ limitations under the License.
 */
 
 
-use colory::ForegroundColor as fg;
+use colory::{ForegroundColor as fg, colory_init};
 
 
 pub fn main(){
+	colory_init().unwrap();
 	println!("Note: All these features may not not work as expected as your terminal may not support all ansi escape codes or may even not support ansi escape codes at all.\n");
 
 	println!("\

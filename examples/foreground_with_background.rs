@@ -15,9 +15,10 @@ limitations under the License.
 */
 
 
-use colory::{ForegroundColor as fg, BackgroundColor as bg, Off};
+use colory::{colory_init, ForegroundColor as fg, BackgroundColor as bg, Off};
 
 fn main(){
+	colory_init().unwrap();
 	println!("You can even use foreground colors with background colors. Here is an example\n\
 	{}{}This contains both a custom foreground and background.{}",
 	bg::Yellow, fg::Red, Off);

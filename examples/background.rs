@@ -15,10 +15,11 @@ limitations under the License.
 */
 
 
-use colory::BackgroundColor as bg;
+use colory::{colory_init, BackgroundColor as bg};
 
 
 pub fn main(){
+	colory_init().unwrap();
 	println!("Note: All these features may not not work as expected as your terminal may not support all ansi escape codes or may even not support ansi escape codes at all.\n");
 
 	println!("\

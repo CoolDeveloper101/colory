@@ -23,7 +23,10 @@ use crate::italic::italic;
 mod underline;
 use crate::underline::underline;
 
+use colory::colory_init;
+
 fn main(){
+	colory_init().unwrap();
 	bold();
 	italic();
 	underline();
