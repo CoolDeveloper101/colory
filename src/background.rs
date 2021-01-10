@@ -1,5 +1,5 @@
 /*
-Copyright 2020 CoolDeveloper101
+Copyright 2021 CoolDeveloper101
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -20,9 +20,10 @@ use std::fmt;
 /// An enum to manipulate background colors.
 /// # Example
 /// ```
-/// # use colory::{Off, BackgroundColor};
+/// # use colory::{Off, BackgroundColor, colory_init};
 /// #
 /// # fn main() {
+/// # colory_init();
 /// println!("{}The background should be blue.{}", BackgroundColor::Red, Off);
 /// # }
 /// ```

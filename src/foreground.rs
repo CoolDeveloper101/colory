@@ -1,5 +1,5 @@
 /*
-Copyright 2020 CoolDeveloper101
+Copyright 2021 CoolDeveloper101
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -21,9 +21,10 @@ use std::fmt;
 /// An enum to manipulate foreground colors.
 /// # Example
 /// ```
-/// # use colory::{Off, ForegroundColor};
+/// # use colory::{Off, ForegroundColor, colory_init};
 /// #
 /// # fn main() {
+/// # colory_init().unwrap();
 /// println!("{}This is red.{}", ForegroundColor::Red, Off);
 /// # }
 /// ```
